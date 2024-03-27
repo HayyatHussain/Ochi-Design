@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(./assets/fonts/NeueMontreal-Regular.ttf);
+}
+
+@font-face {
+  font-family: "F Grotesk";
+  src: url(./assets/fonts/FoundersGrotesk-Semibold.ttf);
+}
+
+header {
+  font-family: "Neue Montreal";
+}
+
+.masker {
+  font-family: "F Grotesk";
+}
