@@ -4,7 +4,7 @@ function navbar() {
   return (
     <header className="fixed z-[999] w-full px-[3.35rem] py-[1rem]">
       <nav className="flex justify-between items-center">
-        <div className="logo">
+        <div className="logo cursor-pointer">
           <svg
             width="72"
             height="30"
@@ -39,7 +39,9 @@ function navbar() {
             (item, index) => (
               <a
                 key={index}
-                className={`text-md font-regular ${index == 4 && "ml-32"}`}
+                className={`text-md font-regular cursor-pointer ${
+                  index == 4 && "ml-32"
+                }`}
               >
                 {item}
               </a>
