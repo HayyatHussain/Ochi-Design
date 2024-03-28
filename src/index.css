@@ -19,3 +19,21 @@ header {
 .masker {
   font-family: "F Grotesk";
 }
+
+.startBtns:hover .btn-1 {
+  background-color: white;
+  color: black;
+}
+
+.startBtns:hover .btn-2 {
+  background-color: white;
+  color: black;
+}
+
+.btn-1 {
+  transition: all 200ms ease;
+}
+
+.btn-2 {
+  transition: all 200ms ease 60ms;
+}
