@@ -1,17 +1,22 @@
 import React from "react";
-import { PiArrowUpRight, PiArrowUpRightBold } from "react-icons/pi";
+import { PiArrowUpRightBold } from "react-icons/pi";
 
 function landing() {
   return (
     <div className="w-full h-screen bg-zinc-900 pt-1">
       <div className="textStructure mt-36 px-[3.35rem]">
-        <div className="masker">
-          {["we create", "eye opening", "presentations"].map((item, index) => (
-            <h1 key={index} className="text-9xl uppercase leading-[100px]">
-              {item}
-            </h1>
-          ))}
-        </div>
+        {["we create", "eye opening", "presentations"].map((item, index) => (
+          <div className="masker">
+            <div className="w-fit flex gap-3 overflow-hidden">
+              {index === 1 && (
+                <div className="w-[8rem] h-[5.4rem] bg-red-500 self-end rounded-[8px]"></div>
+              )}
+              <h1 key={index} className="text-9xl uppercase leading-[100px]">
+                {item}
+              </h1>
+            </div>
+          </div>
+        ))}
       </div>
       <div className="font-['Neue_Montreal'] font-regular text-md flex justify-between items-center border-t-[1px] mt-60 border-zinc-600 px-[3.35rem] py-3">
         {[
