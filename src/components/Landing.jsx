@@ -29,8 +29,9 @@ function landing() {
           <div className="btn-1 px-[0.8rem] py-1 border-[1.8px] border-white rounded-3xl">
             START THE PROJECT
           </div>
-          <div className="btn-2 text-lg flex justify-center items-center w-8 h-8 border-[1.8px] border-white rounded-full">
-            <PiArrowUpRightBold />
+          <div className="relative text-lg btn-2 flex justify-center items-center w-8 h-8 border-[1.8px] border-white rounded-full">
+            <PiArrowUpRightBold className="absolute z-10 arr" />
+            <div className="absolute btn-bg bg-white w-0 h-0 z-0 rounded-full"></div>
           </div>
         </div>
       </div>

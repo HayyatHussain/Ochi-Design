@@ -20,23 +20,36 @@ header {
   font-family: "F Grotesk";
 }
 
+.btn-1 {
+  transition: all 200ms ease;
+}
+
+.btn-bg {
+  transition: all 0.46s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arr {
+  transition: all 0.46s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
 .startBtns:hover .btn-1 {
   background-color: white;
   color: black;
 }
 
-.startBtns:hover .btn-2 {
-  background-color: white;
+.startBtns:hover .btn-bg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.startBtns:hover .arr {
   color: black;
 }
 
-.btn-1 {
-  transition: all 200ms ease;
-}
-
-.btn-2 {
-  transition: all 200ms ease 60ms;
-}
 .ani-pic {
   background-image: url("https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg");
   background-position: center;
