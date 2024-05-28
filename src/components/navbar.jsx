@@ -2,7 +2,7 @@ import React from "react";
 
 function navbar() {
   return (
-    <header className="fixed z-[999] w-full px-[3.35rem] py-[1rem]">
+    <header className="neue fixed z-[999] w-full px-[3.35rem] py-[1rem]">
       <nav className="flex justify-between items-center">
         <div className="logo cursor-pointer">
           <svg

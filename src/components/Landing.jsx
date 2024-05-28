@@ -6,7 +6,7 @@ function landing() {
     <div className="w-full min-h-screen bg-zinc-900 pt-1">
       <div className="textStructure mt-36 px-[3.35rem]">
         {["we create", "eye opening", "presentations"].map((item, index) => (
-          <div className="masker">
+          <div className="masker founder">
             <div className="w-fit flex gap-3 overflow-hidden">
               {index === 1 && (
                 <div className="w-[8rem] h-[5.4rem] self-end rounded-[8px] ani-pic"></div>

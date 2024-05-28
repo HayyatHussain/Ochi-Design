@@ -12,11 +12,11 @@
   src: url(./assets/fonts/FoundersGrotesk-Semibold.ttf);
 }
 
-header {
+.neue {
   font-family: "Neue Montreal";
 }
 
-.masker {
+.founder {
   font-family: "F Grotesk";
 }
 
