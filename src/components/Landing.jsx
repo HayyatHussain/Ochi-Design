@@ -3,7 +3,7 @@ import { PiArrowUpRightBold } from "react-icons/pi";
 
 function landing() {
   return (
-    <div className="w-full min-h-screen bg-zinc-900 pt-1">
+    <section className="w-full min-h-screen bg-zinc-900 pt-1">
       <div className="textStructure mt-36 px-[3.35rem]">
         {["we create", "eye opening", "presentations"].map((item, index) => (
           <div className="masker founder">
@@ -35,7 +35,7 @@ function landing() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
