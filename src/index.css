@@ -37,3 +37,9 @@ header {
 .btn-2 {
   transition: all 200ms ease 60ms;
 }
+.ani-pic {
+  background-image: url("https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
