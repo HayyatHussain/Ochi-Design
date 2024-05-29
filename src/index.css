@@ -12,6 +12,17 @@
   src: url(./assets/fonts/FoundersGrotesk-Semibold.ttf);
 }
 
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
 .neue {
   font-family: "Neue Montreal";
 }
@@ -55,4 +66,37 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.read-btn,
+.read-logo {
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.s-img,
+.s-con {
+  transition: all 1.44s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.read-btn:hover {
+  background: #000;
+}
+
+.read-btn:hover .read-logo {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #000;
+  margin-right: 0.32rem;
+}
+
+.s-con {
+  border-radius: 0.75rem;
+}
+
+.s-con:hover {
+  scale: 0.94;
+}
+
+.s-con:hover .s-img {
+  scale: 1.1;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { PiArrowUpRightBold } from "react-icons/pi";
 
 function About() {
   return (
@@ -32,6 +33,24 @@ function About() {
               )
             )}
           </div>
+        </div>
+      </div>
+      <div className="pt-4 flex px-12">
+        <div className="w-1/2">
+          <h1 className="text-[3rem] leading-[1]">Our approach:</h1>
+          <button className="read-btn rounded-3xl bg-[#212121] text-[13.1px] text-white w-[9.7rem] h-[3.2rem] mt-5 flex items-center justify-between pl-5">
+            READ MORE
+            <div className="mr-5 read-logo w-[0.45rem] h-[0.45rem] rounded-full bg-white flex items-center justify-center text-[1rem]">
+              <PiArrowUpRightBold />
+            </div>
+          </button>
+        </div>
+        <div className="w-1/2 overflow-hidden s-con">
+          <img
+            className="s-img rounded-xl relative left-[3px]"
+            src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg"
+            alt="side-picture"
+          />
         </div>
       </div>
     </section>
