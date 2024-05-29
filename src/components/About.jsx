@@ -36,7 +36,7 @@ function About() {
         </div>
       </div>
       <div className="pt-4 flex px-12">
-        <div className="w-1/2">
+        <div className="w-1/2 concon">
           <h1 className="text-[3rem] leading-[1]">Our approach:</h1>
           <button className="read-btn rounded-3xl bg-[#212121] text-[13.1px] text-white w-[9.7rem] h-[3.2rem] mt-5 flex items-center justify-between pl-5">
             READ MORE

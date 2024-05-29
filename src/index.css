@@ -93,10 +93,10 @@
   border-radius: 0.75rem;
 }
 
-.s-con:hover {
-  scale: 0.94;
+.concon:hover + .s-con {
+  transform: scale(0.94);
 }
 
-.s-con:hover .s-img {
-  scale: 1.1;
+.concon:hover + .s-con .s-img {
+  transform: scale(1.1);
 }
