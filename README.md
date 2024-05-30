@@ -1,1 +1,1 @@
-# Strictly for "educational purposes
+# Strictly for "Educational" purposes
