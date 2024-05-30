@@ -1,1 +1,1 @@
-# Strictly for "Educational" purposes
+# Strictly cloned for "Educational" purposes
