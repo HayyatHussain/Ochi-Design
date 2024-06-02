@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
+import Video from "./components/Video";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Landing />
       <Marquee />
       <About />
+      <Video />
     </div>
   );
 }
