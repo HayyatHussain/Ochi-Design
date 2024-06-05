@@ -4,6 +4,7 @@ import Landing from "./components/Landing";
 import Marquee from "./components/Marquee";
 import About from "./components/About";
 import Video from "./components/Video";
+import Featured from "./components/Featured";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Marquee />
       <About />
       <Video />
+      <Featured />
     </div>
   );
 }
