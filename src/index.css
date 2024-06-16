@@ -93,9 +93,45 @@
 }
 
 .concon:hover + .s-con {
-  transform: scale(0.94);
+  transform: scale(0.97);
 }
 
 .concon:hover + .s-con .s-img {
   transform: scale(1.1);
+}
+
+.card-content,
+.card-content img {
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  overflow: hidden;
+}
+
+.card-content:hover {
+  transform: scale(0.95);
+}
+.card-content:hover img {
+  transform: scale(1.1);
+}
+
+.btn-op,
+.op-logo {
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.op-logo svg {
+  transition: all 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: scale(0.27);
+}
+
+.btn-op:hover {
+  background: #000;
+}
+
+.btn-op:hover .op-logo svg {
+  transform: scale(0.27);
+}
+
+.btn-op:hover .op-logo {
+  transform: scale(5);
+  color: #000;
 }
