@@ -5,6 +5,7 @@ import Marquee from "./components/Marquee";
 import About from "./components/About";
 import Video from "./components/Video";
 import Featured from "./components/Featured";
+import Cards from "./components/Cards";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Video />
       <Featured />
+      <Cards />
     </div>
   );
 }
