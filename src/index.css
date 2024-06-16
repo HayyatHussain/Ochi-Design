@@ -100,13 +100,19 @@
   transform: scale(1.1);
 }
 
-.card-content,
+.card-content .image {
+  transition: all 0.4s linear;
+}
+
 .card-content img {
-  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+}
+
+.card-content .image {
   overflow: hidden;
 }
 
-.card-content:hover {
+.card-content:hover .image {
   transform: scale(0.95);
 }
 .card-content:hover img {
@@ -120,7 +126,7 @@
 
 .op-logo svg {
   transition: all 0s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: scale(0.27);
+  transform: scale(0.25);
 }
 
 .btn-op:hover {
@@ -128,10 +134,9 @@
 }
 
 .btn-op:hover .op-logo svg {
-  transform: scale(0.27);
+  transform: scale(0.25);
 }
 
 .btn-op:hover .op-logo {
   transform: scale(5);
-  color: #000;
 }
