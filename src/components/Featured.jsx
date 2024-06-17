@@ -3,7 +3,7 @@ import { PiArrowUpRightBold } from "react-icons/pi";
 
 function Featured() {
   return (
-    <div className="w-full py-24 bg-white text-[#212121]">
+    <section className="w-full py-24 bg-white text-[#212121] rounded-t-[1.2rem]">
       <div className="w-full px-12 border-b-[1px] border-zinc-700 pb-[2.4rem] mb-10">
         <h1 className="text-[3rem] leading-[1] neue tracking-wide">
           Featured projects
@@ -103,7 +103,7 @@ function Featured() {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

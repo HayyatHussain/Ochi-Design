@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { PiArrowUpRightBold } from "react-icons/pi";
 
@@ -9,7 +10,12 @@ function landing() {
           <div className="masker founder">
             <div className="w-fit flex gap-3 overflow-hidden">
               {index === 1 && (
-                <div className="w-[8rem] h-[5.4rem] self-end rounded-[8px] ani-pic"></div>
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "7.7rem" }}
+                  transition={{ ease: [0.74, 0, 0.24, 1], duration: 1.2 }}
+                  className="w-[7.7rem] h-[5rem] self-end rounded-[8px] ani-pic"
+                ></motion.div>
               )}
               <h1 key={index} className="text-9xl uppercase leading-[100px]">
                 {item}

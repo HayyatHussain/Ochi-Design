@@ -2,7 +2,7 @@ import React from "react";
 
 function Cards() {
   return (
-    <div className="w-full h-[70vh] bg-white px-12 flex gap-3 items-center pb-20">
+    <div className="w-full h-[80vh] bg-white px-12 flex gap-3 items-center pb-20">
       <div className="card-con w-1/2 h-[20.5rem]">
         <div className="relative flex items-center justify-center card w-full h-full bg-[#004D43] rounded-lg">
           <img
