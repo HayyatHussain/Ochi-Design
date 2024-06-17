@@ -6,6 +6,7 @@ import About from "./components/About";
 import Video from "./components/Video";
 import Featured from "./components/Featured";
 import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Video />
       <Featured />
       <Cards />
+      <Footer />
     </div>
   );
 }
