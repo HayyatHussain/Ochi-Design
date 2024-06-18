@@ -1,6 +1,6 @@
 import React from "react";
 
-function navbar() {
+function Navbar() {
   return (
     <header className="neue fixed z-[999] w-full px-[3.35rem] py-[1rem]">
       <nav className="flex justify-between items-center">
