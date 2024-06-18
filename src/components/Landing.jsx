@@ -4,7 +4,12 @@ import { PiArrowUpRightBold } from "react-icons/pi";
 
 function landing() {
   return (
-    <section className="w-full min-h-screen bg-zinc-900 pt-1">
+    <section
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-0.5"
+      className="w-full min-h-screen bg-zinc-900 pt-1"
+    >
       <div className="textStructure mt-36 px-[3.35rem]">
         {["we create", "eye opening", "presentations"].map((item, index) => (
           <div className="masker founder">

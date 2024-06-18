@@ -3,7 +3,12 @@ import { PiArrowUpRightBold } from "react-icons/pi";
 
 function About() {
   return (
-    <section className="w-full py-20 bg-[#CDEA68] rounded-[1.2rem] text-black neue">
+    <section
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="0.4"
+      className="w-full py-20 pb-44 bg-[#CDEA68] rounded-[0.9rem] text-black neue -mt-[20rem] -mb-[15.5rem]"
+    >
       <h1 className="px-12 mb-12 text-[3rem] leading-[1]">
         Ochi is a strategic partner for fast-grow­ing tech businesses that need
         to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire great
@@ -27,9 +32,11 @@ function About() {
           <div className="links flex flex-col">
             {["Instagram", "Behance", "Facebook", "linkedin"].map(
               (item, index) => (
-                <a key={index} className={`text-[14.7px] cursor-pointer`}>
-                  {item}
-                </a>
+                <p>
+                  <a key={index} className={`text-[14.7px] cursor-pointer`}>
+                    {item}
+                  </a>
+                </p>
               )
             )}
           </div>

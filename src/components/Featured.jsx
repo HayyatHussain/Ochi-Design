@@ -1,9 +1,17 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { PiArrowUpRightBold } from "react-icons/pi";
+import { useState } from "react";
 
 function Featured() {
+  const [isHovering, setHovering] = useState(0);
   return (
-    <section className="w-full py-24 bg-white text-[#212121] rounded-t-[1.2rem]">
+    <section
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-0.05"
+      className="w-full py-24 bg-white text-[#212121] rounded-t-[0.6rem]"
+    >
       <div className="w-full px-12 border-b-[1px] border-zinc-700 pb-[2.4rem] mb-10">
         <h1 className="text-[3rem] leading-[1] neue tracking-wide">
           Featured projects
@@ -15,10 +23,24 @@ function Featured() {
             <div className="rounded-full h-3 w-3 bg-black"></div>
             <p>FYDE</p>
           </div>
-          <div className="card-content w-full h-[27.4rem] relative">
-            <h1 className="absolute text-[#CDEA68] z-10 founder text-[7rem] tracking-tight left-full -translate-x-1/2 top-1/2 -translate-y-1/2">
+          <div
+            onMouseEnter={() => setHovering(1)}
+            onMouseLeave={() => setHovering(0)}
+            className="card-content w-full h-[27.4rem] relative"
+          >
+            <h1 className="flex overflow-hidden text-[#CDEA68] z-10 founder text-[7rem] tracking-tight absolute left-full -translate-x-1/2 top-1/2 -translate-y-1/2 h-[7rem]">
               {"FYDE".split("").map((item, index) => (
-                <span>{item}</span>
+                <motion.span
+                  initial={{ y: "160%" }}
+                  animate={isHovering == 1 ? { y: "40%" } : { y: "160%" }}
+                  transition={{
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: index * 0.02,
+                  }}
+                  className="inline-block"
+                >
+                  {item}
+                </motion.span>
               ))}
             </h1>
             <div className="image rounded-lg">
@@ -35,10 +57,24 @@ function Featured() {
             <div className="rounded-full h-3 w-3 bg-[#212121]"></div>
             <p>VISE</p>
           </div>
-          <div className="card-content w-full h-[27.4rem] relative">
-            <h1 className="absolute text-[#CDEA68] z-10 founder text-[7rem] tracking-tight -translate-x-1/2 top-1/2 -translate-y-1/2">
+          <div
+            onMouseEnter={() => setHovering(2)}
+            onMouseLeave={() => setHovering(0)}
+            className="card-content w-full h-[27.4rem] relative"
+          >
+            <h1 className=" flex overflow-hidden text-[#CDEA68] z-10 founder text-[7rem] tracking-tight absolute -translate-x-1/2 top-1/2 -translate-y-1/2 h-[7rem]">
               {"VISE".split("").map((item, index) => (
-                <span>{item}</span>
+                <motion.span
+                  initial={{ y: "160%" }}
+                  animate={isHovering == 2 ? { y: "40%" } : { y: "160%" }}
+                  transition={{
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: index * 0.02,
+                  }}
+                  className="inline-block"
+                >
+                  {item}
+                </motion.span>
               ))}
             </h1>
             <div className="image rounded-lg">
@@ -56,10 +92,24 @@ function Featured() {
             <div className="rounded-full h-3 w-3 bg-[#212121]"></div>
             <p>TRAWA</p>
           </div>
-          <div className="card-content w-full h-[27.4rem] relative">
-            <h1 className="absolute text-[#CDEA68] z-10 founder text-[7rem] tracking-tight left-full -translate-x-1/2 top-1/2 -translate-y-1/2">
+          <div
+            onMouseEnter={() => setHovering(3)}
+            onMouseLeave={() => setHovering(0)}
+            className="card-content w-full h-[27.4rem] relative"
+          >
+            <h1 className="flex overflow-hidden text-[#CDEA68] z-20 founder text-[7rem] tracking-tight absolute left-full -translate-x-1/2 top-1/2 -translate-y-1/2 h-[7rem]">
               {"TRAWA".split("").map((item, index) => (
-                <span>{item}</span>
+                <motion.span
+                  initial={{ y: "160%" }}
+                  animate={isHovering == 3 ? { y: "40%" } : { y: "160%" }}
+                  transition={{
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: index * 0.02,
+                  }}
+                  className="inline-block"
+                >
+                  {item}
+                </motion.span>
               ))}
             </h1>
             <div className="image rounded-lg">
@@ -76,10 +126,24 @@ function Featured() {
             <div className="rounded-full h-3 w-3 bg-[#212121]"></div>
             <p>PREMIUM BLEND</p>
           </div>
-          <div className="card-content w-full h-[27.4rem] relative">
-            <h1 className="absolute text-[#CDEA68] z-10 founder text-[7rem] tracking-tight -translate-x-1/2 top-1/2 -translate-y-1/2">
+          <div
+            onMouseEnter={() => setHovering(4)}
+            onMouseLeave={() => setHovering(0)}
+            className="card-content w-full h-[27.4rem] relative"
+          >
+            <h1 className="flex overflow-hidden text-[#CDEA68] z-10 founder text-[7rem] tracking-tight absolute -translate-x-1/2 top-1/2 -translate-y-1/2 h-[7rem]">
               {"PREMIUM BLEND".split("").map((item, index) => (
-                <span>{item}</span>
+                <motion.span
+                  initial={{ y: "160%" }}
+                  animate={isHovering == 4 ? { y: "40%" } : { y: "160%" }}
+                  transition={{
+                    ease: [0.22, 1, 0.36, 1],
+                    delay: index * 0.02,
+                  }}
+                  className="inline-block"
+                >
+                  {item}
+                </motion.span>
               ))}
             </h1>
             <div className="image rounded-lg">
