@@ -140,7 +140,10 @@ function Featured() {
                     ease: [0.22, 1, 0.36, 1],
                     delay: index * 0.02,
                   }}
-                  className="inline-block"
+                  className={`inline-block ${
+                    index == 6 &&
+                    "after:content-[' '] after:inline-block after:w-4"
+                  }`}
                 >
                   {item}
                 </motion.span>
